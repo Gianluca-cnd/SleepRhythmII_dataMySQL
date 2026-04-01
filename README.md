@@ -42,7 +42,7 @@ demographic (1) ──────< sleep_rhythm (N)
 
 ## Analysis Overview
 
-`04_analysis.sql` covers:
+`1.0_analysis.sql` covers:
 
 - **Overview** participant count, record count, coverage
 - **Demographic profile** age distribution, BMI categories, eye conditions
