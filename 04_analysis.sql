@@ -2,7 +2,6 @@
 -- FILE: analysis/04_analysis.sql
 -- Description: Exploratory data analysis queries for the
 --              sleep rhythm clinical study dataset.
--- Author: [Your Name]
 -- ============================================================
 
 USE sleep_study;
