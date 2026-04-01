@@ -1,5 +1,5 @@
 -- ============================================================
--- FILE: analysis/04_analysis.sql
+-- FILE: analysis/1.0_analysis.sql
 -- Description: Exploratory data analysis queries for the
 --              sleep rhythm clinical study dataset.
 -- ============================================================
