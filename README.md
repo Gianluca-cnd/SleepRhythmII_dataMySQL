@@ -68,6 +68,7 @@ All data has been anonymised before publication. The following transformations w
 ## Dataset Summary
 
 | Dataset | Rows | Columns |
+|---------|------|---------|
 | `demographic_anon.csv` | 877 | 8 |
 | `sleeprhythm_anon.csv` | 7,766 | 7 |
 
