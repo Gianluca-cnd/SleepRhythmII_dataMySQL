@@ -16,6 +16,7 @@ demographic (1) ──────< sleep_rhythm (N)
 
 ### `demographic`
 | Column | Type | Description |
+|--------|------|-------------|
 | `ID` | INT (PK) | Participant identifier |
 | `age` | DECIMAL(4,1) | Age at enrollment (years) |
 | `height_cm` | INT | Height in cm |
@@ -27,6 +28,7 @@ demographic (1) ──────< sleep_rhythm (N)
 
 ### `sleep_rhythm`
 | Column | Type | Description |
+|--------|------|-------------|
 | `record_id` | INT (PK, AUTO) | Record identifier |
 | `ID` | INT (FK) | Participant identifier |
 | `sex` | TINYINT | 0=Male · 1=Female |
@@ -55,6 +57,7 @@ demographic (1) ──────< sleep_rhythm (N)
 All data has been anonymised before publication. The following transformations were applied:
 
 | Original field | Action | Reason |
+|----------------|--------|--------|
 | `t000_city`, `t000_province/country`, `t000_cap` | **Removed** | Geographic re-identification risk |
 | `t000_diseases` (free text) | **Removed** | Sensitive health data (GDPR Art. 9) — binary flag retained |
 | `t000_medication` (free text) | **Removed** | Sensitive health data (GDPR Art. 9) |
