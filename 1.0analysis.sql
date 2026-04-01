@@ -1,12 +1,11 @@
--- ============================================================
--- FILE: analysis/1.0_analysis.sql
--- Description: Exploratory data analysis queries for the
---              sleep rhythm clinical study dataset.
--- ============================================================
+============================================================
+FILE: analysis/1.0_analysis.sql
+Description: Exploratory data analysis queries for the sleep rhythm clinical study dataset.
+============================================================
 
 USE sleep_study;
 
--- ── 1. OVERVIEW ──────────────────────────────────────────────────────────────
+-- 1. OVERVIEW ──────────────────────────────────────────────────────────────
 
 -- Total participants in the study
 SELECT COUNT(*) AS total_participants
@@ -21,7 +20,7 @@ SELECT COUNT(DISTINCT ID) AS participants_with_records
 FROM sleep_rhythm;
 
 
--- ── 2. DEMOGRAPHIC PROFILE ───────────────────────────────────────────────────
+-- 2. DEMOGRAPHIC PROFILE ───────────────────────────────────────────────────
 
 -- Age distribution (min, avg, max)
 SELECT
@@ -55,7 +54,7 @@ FROM demographic
 GROUP BY eye_conditions;
 
 
--- ── 3. SLEEP RHYTHM PATTERNS ─────────────────────────────────────────────────
+-- 3. SLEEP RHYTHM PATTERNS ─────────────────────────────────────────────────
 
 -- Sex distribution among sleep records
 SELECT
@@ -94,7 +93,7 @@ GROUP BY trimester
 ORDER BY trimester;
 
 
--- ── 4. JOINED ANALYSIS ───────────────────────────────────────────────────────
+-- 4. JOINED ANALYSIS ───────────────────────────────────────────────────────
 
 -- Average BMI by sex
 SELECT
@@ -133,7 +132,7 @@ GROUP BY decade
 ORDER BY decade;
 
 
--- ── 5. DATA QUALITY CHECKS ───────────────────────────────────────────────────
+-- 5. DATA QUALITY CHECKS ───────────────────────────────────────────────────
 
 -- Participants in sleep_rhythm not present in demographic
 SELECT COUNT(DISTINCT sr.ID) AS orphan_sleep_records
